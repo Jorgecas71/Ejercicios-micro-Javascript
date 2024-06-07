@@ -19,4 +19,8 @@ const path = '/src/async/data.json'
 }
 }
 
+<<<<<<< HEAD
 getData()
+=======
+getData()
+>>>>>>> develop
