@@ -1,13 +1,15 @@
+//Defino las variables
+
 let a = 8
 let b = 2
 
-function numeroMayor(a, b) {
-    if (a > b) {
-        console.log("El número mayor es " + a);
-    } else if (b > a) {
-        console.log("El número mayor es " + b);
-    } else {
-        console.log("Los números son iguales");
-    }
-}
+// El condicional if,else para comparar los números e imprime la salida
 
+if (a > b) {
+    console.log(`El número mayor es a: ${a}`);
+} else if (a < b) {
+    console.log(`El número mayor es b: ${b}`);
+} else {
+    console.log('Ambos números son iguales.');
+}
+console.log();
