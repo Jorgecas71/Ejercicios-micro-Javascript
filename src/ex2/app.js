@@ -1,21 +1,39 @@
 
-// Dado que accedo a la página
-// Cuando se renderiza
-// Entonces veo el texto "la suma de 3 + 5 es 8"
+// Dado que el usuario se encuentra en la página con el formulario
+// Cuando rellena el campo de formulario con su nombre y valida haciendo click en el botón validar
+// Entonces se renderiza en pantalla el texto "hola <nombre usuario>" y
+// Dado que el input está vacio
+// Cuando el usuario hace click en validar
+// Entonces se muestra el texto "Debe introducir su nombre"
 
-const numb1 = 3
-const numb2 = 5
+// Criterio 1
+// Click de botón = evento
+// Recuperar el nombre de usuario
+// Renderizar en un contenedor html el texto "hola Pepe"
 
-function sum(num1, num2) {
-    let total = num1 + num2;
-    return total
+// Criterio 2
+// Comprobar si el input está vacio
+
+const inputUsername = document.getElementById('username')
+const btnValidate = document.getElementById('btn-validate')
+const mainBlock = document.querySelector('main')
+
+btnValidate.addEventListener('click', () => {
+    const username = inputUsername.value
+    render(username)
+})
+function render(username) {
+    if(isEmpty(username)){
+        mainBlock.innerHTML = /* html */ 
+        ` <span>debe introducir su nombre</span> `  
+    }
+    mainBlock.innerHTML = /* html */ 
+       ` <span>Hola${username}</span> `
 }
-function render(num1, num2, total) {
-    const divApp = document.getElementById('app');
-    const txt = `la suma de ${numb1} +${numb2} es ${total}`;
-    divApp.innerHTML = txt
+
+function isEmpty() {
+    const stringLength = username.length
+    // if (stringLength === 0) ? return true
+    // return false
+    return (stringLength === 0) ? true : false
 }
-
-
-
-render(numb1,numb2,sum(numb1,numb2))

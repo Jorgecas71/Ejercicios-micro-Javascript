@@ -1,2 +1,2 @@
-# ex6
-Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.
+# Escribe un programa que pida una frase y escriba cuantas veces
+# aparece la letra a

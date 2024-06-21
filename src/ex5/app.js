@@ -1,15 +1,22 @@
-//Defino las variables
 
-let a = 8
-let b = 2
+// El condicional if, else comprara 
+const showLargerNumber = document.getElementById('showNumber');
 
-// El condicional if,else para comparar los números e imprime la salida
+// Defino la función
 
-if (a > b) {
-    console.log(`El número mayor es a: ${a}`);
-} else if (a < b) {
-    console.log(`El número mayor es b: ${b}`);
-} else {
-    console.log('Ambos números son iguales.');
+function showNumber(a, b, c) {
+
+    if (a > b && a > c) {
+        return (`El número mayor es A: ${a}`);
+    } else if (b > a && b > c) {
+        return (`El número mayor es B: ${b}`);
+    } else if (c > a && c > b) {
+        return (`El número mayor es C: ${c}`);
+    } else {
+        return (`Los numeros son iguales:`);
+    }
 }
-console.log();
+
+//Llamo al DOM
+
+showLargerNumber.innerHTML = `${showNumber(5, 10, 7)}`;
