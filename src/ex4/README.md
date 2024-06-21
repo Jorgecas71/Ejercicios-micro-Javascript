@@ -1,3 +1,3 @@
-# exe 4
+# ex4
 
-# Escribe un programa que pida dos números y escriba “La suma de <numero-uno> con <numero-dos> es <resultado>”.
+# Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.

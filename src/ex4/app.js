@@ -1,9 +1,23 @@
-let a = 6
-let b = 17
+//Defino las variables
 
-function suma(a, b) {
-    return a + b;    
+let a = 8
+let b = 2
+
+// El condicional if,else para comparar los números 
+const showNumber = document.getElementById('showNumber')
+
+function mostrarMayor() {
+    if (a > b) {
+        return `El número mayor es a: ${a}`;
+
+    } else if (a < b) {
+        return `El número mayor es b: ${b}`;
+
+    } else {
+        return 'Ambos números son iguales.';
+    }
 }
 
-const resultado = suma(6, 17);
-console.log(resultado);
+// imprimir en DOM
+
+showNumber.innerHTML = `EL numero mayor es ${mostrarMayor()}`;
