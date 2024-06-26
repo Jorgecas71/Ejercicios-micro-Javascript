@@ -46,4 +46,13 @@ console.log(`- Vocal 'i': ${resultados['i']} veces`);
 console.log(`- Vocal 'o': ${resultados['o']} veces`);
 console.log(`- Vocal 'u': ${resultados['u']} veces`);
 
-document.body.innerHTML = resultado;
+let resultadoTexto = `
+    En la frase "${frase}" las vocales aparecen de la siguiente manera:<br>
+    - Vocal 'a': ${resultados['a']} veces<br>
+    - Vocal 'e': ${resultados['e']} veces<br>
+    - Vocal 'i': ${resultados['i']} veces<br>
+    - Vocal 'o': ${resultados['o']} veces<br>
+    - Vocal 'u': ${resultados['u']} veces
+`;
+
+document.getElementById('words').innerHTML = resultadoTexto;
