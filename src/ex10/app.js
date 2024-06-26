@@ -27,3 +27,5 @@ let numero = parseInt(prompt("Por favor, ingresa un número:"));
 let resultado = esDivisible(numero);
 console.log(resultado);
 
+document.body.innerHTML = resultado;
+

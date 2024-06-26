@@ -15,3 +15,5 @@ function mostrarDivisores(numero) {
 let numero = parseInt(prompt("Por favor, ingresa un número para encontrar sus divisores:"));
 
 mostrarDivisores(numero);
+
+ document.result.innerHTML = resultado;
