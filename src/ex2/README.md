@@ -1,2 +1,3 @@
 # Exe 2
-# Escribe un programa que escriba en la pantalla “La suma de 3 + 5 es <resultado>”.
+
+# Escribe un programa que pida el nombre del usuario con un input y escriba un texto que diga “Hola <nombre-de-usuario>”

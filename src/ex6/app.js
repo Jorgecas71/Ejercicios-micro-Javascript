@@ -1,15 +1,14 @@
-// Defino los números
 
-let a = 5;
-let b = 10;
-let c = 7;
+// Pedir una frase al usuario
+let phrase = prompt("Por favor, introduce una frase:");
 
-// El condicional if, else comprara e imprime en pantalla console log
-
-if (a >= b && a >= c) {
-    console.log(`El número mayor es A: ${a}`);
-} else if (b >= a && b >= c) {
-    console.log(`El número mayor es B: ${b}`);
-} else {
-    console.log(`El número mayor es C: ${c}`);
+// Contar cuántas veces aparece la letra 'a'
+let count = 0;
+for (let i = 0; i < phrase.length; i++) {
+    if (phrase[i].toLowerCase() === 'a') {
+        count++;
+    }
 }
+
+// Mostrar el resultado
+alert("La letra 'a' aparece " + count + " veces en la frase.");
